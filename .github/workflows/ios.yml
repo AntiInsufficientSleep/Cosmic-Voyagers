@@ -91,7 +91,7 @@ jobs:
 
       - name: Upload IPA to App Store Connect
         run: |
-          xcrun altool --upload-app -f 'build/iOS/app.ipa/Cosmic Voyagers.ipa' \
+          xcrun altool --upload-app -f build/iOS/app.ipa/CosmicVoyagers.ipa \
                        -u ${{ secrets.APPLE_ID }} \
                        -p ${{ secrets.APP_SPECIFIC_PASSWORD }} \
                        --type ios
