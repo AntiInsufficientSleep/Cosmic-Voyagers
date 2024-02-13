@@ -86,9 +86,6 @@ jobs:
                      -authenticationKeyID ${{ secrets.APPLE_API_KEY_ID }} \
                      -authenticationKeyIssuerID ${{ secrets.APPLE_API_ISSUER_ID }}
 
-      - run: |
-          ls -l build/iOS/app.ipa
-
       - name: Upload IPA to App Store Connect
         run: |
           xcrun altool --upload-app -f build/iOS/app.ipa/CosmicVoyagers.ipa \
