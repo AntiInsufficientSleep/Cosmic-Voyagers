@@ -1,7 +1,7 @@
 name: Unity Android Build
 
 on:
-  workflow_dispatch
+  push
 
 jobs:
   unity-build:
