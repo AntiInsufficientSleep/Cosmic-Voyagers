@@ -39,6 +39,12 @@ jobs:
           androidKeyaliasName: ${{  secrets.KEY_ALIAS }}
           androidKeyaliasPass: ${{  secrets.KEY_PASSWORD }}
 
+      - name: Upload Build
+        uses: actions/upload-artifact@v4
+        with:
+          name: Build-Android
+          path: build/Android
+
       - run: ls -l build/Android
 
       - name: Deploy to Google Play
