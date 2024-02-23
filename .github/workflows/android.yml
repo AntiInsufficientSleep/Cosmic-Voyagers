@@ -40,7 +40,6 @@ jobs:
           androidKeyaliasPass: ${{  secrets.KEY_PASSWORD }}
 
       - run: ls -l build/Android
-      - run: ls -l build/Android/Android
 
       - name: Deploy to Google Play
         uses: r0adkll/upload-google-play@v1
