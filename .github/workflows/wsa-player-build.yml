@@ -10,7 +10,6 @@ jobs:
 
     steps:
       - run: ls -l 'C:\Program Files\Microsoft Visual Studio'
-      - run: ls -l 'C:\Program Files\Microsoft Visual Studio\2019'
       - run: ls -l 'C:\Program Files\Microsoft Visual Studio\2022'
 
       - name: Checkout
@@ -42,4 +41,4 @@ jobs:
 
       - name: Visual Studio Build
         run: |
-          & 'C:\Program Files\Microsoft Visual Studio\2019\BuildTools\MSBuild\Current\Bin\MSBuild.exe' "build/WSAPlayer/WSAPlayer/Cosmic Voyagers.sln"
+          & 'C:\Program Files\Microsoft Visual Studio\2022\BuildTools\MSBuild\Current\Bin\MSBuild.exe' "build/WSAPlayer/WSAPlayer/Cosmic Voyagers.sln"
