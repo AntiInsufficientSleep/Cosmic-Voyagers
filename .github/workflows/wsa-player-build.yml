@@ -34,4 +34,4 @@ jobs:
       - run: ls -l build/WSAPlayer
 
       - name: Visual Studio Build
-        run: 
+        run: echo "Visual Studio Build"
