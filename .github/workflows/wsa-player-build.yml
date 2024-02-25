@@ -32,6 +32,8 @@ jobs:
 
       - run: ls -l build
       - run: ls -l build/WSAPlayer
+      - run: ls -l build/WSAPlayer/WSAPlayer
+
 
       - name: Visual Studio Build
-        run: echo "Visual Studio Build"
+        run: dotnet build "build/WSAPlayer/WSAPlayer/Cosmic Voyagers.sln"
