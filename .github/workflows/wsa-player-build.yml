@@ -33,8 +33,11 @@ jobs:
       - run: ls -l build
       - run: ls -l build/WSAPlayer
       - run: ls -l build/WSAPlayer/WSAPlayer
+      - run: ls -l build/WSAPlayer/WSAPlayer
+      - run: ls -l build/WSAPlayer/WSAPlayer
+      - run: ls -l build/WSAPlayer/WSAPlayer
 
 
       - name: Visual Studio Build
         run: |
-          & 'C:\Program Files\Microsoft Visual Studio\2022\BuildTools\MSBuild\Current\Bin\MSBuild.exe' "build/WSAPlayer/WSAPlayer/Cosmic Voyagers.sln"
+          & 'C:\Program Files\Microsoft Visual Studio\2019\BuildTools\MSBuild\Current\Bin\MSBuild.exe' "build/WSAPlayer/WSAPlayer/Cosmic Voyagers.sln"
