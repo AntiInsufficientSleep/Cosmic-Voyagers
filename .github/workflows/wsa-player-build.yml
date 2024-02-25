@@ -36,4 +36,5 @@ jobs:
 
 
       - name: Visual Studio Build
-        run: dotnet build "build/WSAPlayer/WSAPlayer/Cosmic Voyagers.sln"
+        run: |
+          "C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\MSBuild\Current\Bin\MSBuild.exe "build/WSAPlayer/WSAPlayer/Cosmic Voyagers.sln"
