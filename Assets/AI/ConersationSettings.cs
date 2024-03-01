@@ -1,8 +1,8 @@
 using System.Collections;
 using UnityEngine;
 using UnityEngine.Networking;
-using UnityEngine.UI; // UIコンポーネントを使用するため
-using TMPro; // TextMeshProを使用する場合
+using UnityEngine.UI;
+using TMPro;
 
 public class DialogueManager : MonoBehaviour
 {
@@ -18,7 +18,7 @@ public class DialogueManager : MonoBehaviour
 
     IEnumerator SendRequestToAPI(string message)
     {
-        string apiUrl = "APIのURL"; // APIのエンドポイントURLを設定
+        string apiUrl = "https://iv51qoqbs7.execute-api.ap-northeast-1.amazonaws.com/postConversation";
         WWWForm form = new WWWForm();
         form.AddField("user_id", "1");
         form.AddField("character_id", "1");
