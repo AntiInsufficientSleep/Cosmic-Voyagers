@@ -11,11 +11,13 @@ public class DialogueManager : MonoBehaviour
     public TextMeshProUGUI messageText; // レスポンス表示用のTextMeshProUGUI
 
     // ユーザーが入力を送信するためのメソッド
-    public void SubmitInput()
+    public void SubmitInput(string message)
+{
+    if (!string.IsNullOrEmpty(message)) // 入力が空でないことを確認
     {
-        string userMessage = userInputField.text;
-        StartCoroutine(SendRequestToAPI(userMessage));
+        StartCoroutine(SendRequestToAPI(message));
     }
+}
 
     IEnumerator SendRequestToAPI(string message)
     {
