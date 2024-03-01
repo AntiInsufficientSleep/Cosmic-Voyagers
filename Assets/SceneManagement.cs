@@ -9,4 +9,8 @@ public class SceneManagement : MonoBehaviour
     {
         SceneManager.LoadScene(1);
     }
+    public void Scenemg_AI()
+    {
+        SceneManager.LoadScene(3);
+    }
 }
