@@ -36,7 +36,7 @@ jobs:
           targetPlatform: WebGL
 
       - name: Upload Build
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v5
         with:
           name: Build-WebGL
           path: build/WebGL
