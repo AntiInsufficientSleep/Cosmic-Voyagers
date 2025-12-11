@@ -29,7 +29,7 @@ jobs:
           git merge main
 
       - name: Cache Library
-        uses: actions/cache@v4
+        uses: actions/cache@v5
         with:
           path: Library
           key: ${{ runner.os }}-iOS-Simulator-library-${{ hashFiles('**/Packages.lock.json') }}
